@@ -2,6 +2,9 @@
 
 基于 Unity 的动作角色扮演游戏战斗练习项目，实现了技能系统、UI 框架、有限状态机、对象池等核心模块。
 
+演示视频链接： [【28届实习，ARPG项目演示】](https://www.bilibili.com/video/BV1k4WB6rED8?vd_source=f5e89f8dc4896c7a1d8d179eab8ae72e)
+
+
 ## 游戏流程
 
 
