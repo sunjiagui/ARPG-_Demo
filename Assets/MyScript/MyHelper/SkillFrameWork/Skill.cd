@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ns.CharacterSkillSystem" Collapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAABAUAACAAAAEAAAABAAIAUASABAACAI=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\CharacterSkillSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ns.DeployerConfigFactory" Collapsed="true">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAAg=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\DeployerConfigFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ns.MeleeSkillDeployer" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAAAAAAAQAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\MeleeSkillDeployer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ns.NormalAttakeCombo" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAiBAAAAQAABQAAAAAAgAABAABAAAAUBQgAQAAEA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\NormalAttakeCombo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ns.SkillData">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ns.SkillData.SelectorType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\MyScript\MyHelper\SkillFrameWork\SkillData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="ns.SkillData.AttakeType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\MyScript\MyHelper\SkillFrameWork\SkillData.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AACAwAAAAAAAgAAAIAEAAAAGAAKAAQAAAEIAoQBAIAA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\SkillData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ns.SkillDeployer" Collapsed="true">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAACAAAAEgAAAIIAAAIAAAAAAAAE=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\SkillDeployer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ns.SkillManager">
+    <Position X="0.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAAAAAAAAAAAAAEAAAAAEAAAAACAEAEAAA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\SkillManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ns.TargetRedLight" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAgAAAAAAAAAAAAIBBAAQQAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\TargetRedLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ns.SectorAttakeCalculate" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\AttakeType\Common\SectorAttakeCalculate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ns.HurtEffect" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\ImpactEffect\Common\HurtEffect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ns.IAttakeCalculate" Collapsed="true">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\AttakeType\IAttakeCalculate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ns.IImpactEffect" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\MyScript\MyHelper\SkillFrameWork\ImpactEffect\IImpactEffect.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

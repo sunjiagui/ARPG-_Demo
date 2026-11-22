@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f542a848de77cc041b70da99d96d83d0, type: 3}
+  m_Name: Job2_SkillSet
+  m_EditorClassIdentifier: 
+  jobID: 2
+  skills:
+  - skillID: 1
+    skillName: "\u70C8\u7130\u98CE\u66B4"
+    description: "\u53EC\u5524\u70C8\u7130\u98CE\u66B4\uFF0C\u5BF9\u8303\u56F4\u5185\u654C\u4EBA\u6301\u7EED\u707C\u70E7\u3002"
+    iconName: Equip_117
+    durationTime: 2
+    damageInterval: 1
+    damage: 0.1
+    coolTime: 0
+    costSP: 0
+    attackDistance: 10
+    attackTargets: Enemy
+    prefabName: Fashi_Skill01
+    attackType: 1
+    animationName: Skill01
+    nextBatterId: 0
+    moveSpeed: 0
+    height: 0
+    forwardDis: 0
+    whenTimeCanInvokeOther: 0
+    skillImpacts:
+    - Hurt
+  - skillID: 2
+    skillName: "\u971C\u534E\u65B0\u661F"
+    description: "\u51DD\u805A\u971C\u534E\u65B0\u661F\uFF0C\u5BF9\u5468\u56F4\u654C\u4EBA\u9020\u6210\u8303\u56F4\u4F24\u5BB3\u3002"
+    iconName: Equip_67
+    durationTime: 2
+    damageInterval: 1
+    damage: 0.5
+    coolTime: 0
+    costSP: 0
+    attackDistance: 10
+    attackTargets: Enemy
+    prefabName: Fashi_Skill02
+    attackType: 1
+    animationName: Skill02
+    nextBatterId: 0
+    moveSpeed: 0
+    height: 0
+    forwardDis: 0
+    whenTimeCanInvokeOther: 0
+    skillImpacts:
+    - Hurt

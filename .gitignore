@@ -1,0 +1,53 @@
+# ============================================================
+#  MyARPGTest · Unity 工程 .gitignore
+#  只提交“源码 / 资源 / 工程配置”，不提交任何自动生成文件
+# ============================================================
+
+# ---------- Unity 自动生成目录（绝对不要提交）----------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Ee]xport/
+
+# ---------- IDE / 解决方案（Unity 自动生成，可随时重建）----------
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vs/
+.vsconfig
+.idea/
+.vscode/
+*.DotSettings.user
+
+# ---------- 系统垃圾文件 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 本项目的备份文件（不进仓库）----------
+/Assets.zip
+/Assets_Backup/
+*.unitypackage
+
+# ---------- TextMesh Pro 示例资源（非必需，13 MB；本项目未引用）----------
+/Assets/TextMesh Pro/Examples & Extras/
+/Assets/TextMesh Pro/Examples & Extras.meta
+
+# 本机推送助手脚本（不入仓库）
+/push_to_github.bat

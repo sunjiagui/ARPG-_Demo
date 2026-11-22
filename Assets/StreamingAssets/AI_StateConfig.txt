@@ -1,0 +1,16 @@
+[Idle]
+NoHealth>Dead
+SawTarget>Persuit
+
+[Dead]
+
+[Persuit]
+NoHealth>Dead
+ReachAttakeRange>Attake
+WithoutTargetRange>Default   
+
+[Attake]
+NoHealth>Dead
+ExitAttakeRange>Persuit
+KilledTarget>Default
+

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpriteAtlas_Skill
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 21300126, guid: b9d517498dbb718488e7d6b08ea028c3, type: 3}
+    - {fileID: 21300206, guid: b9d517498dbb718488e7d6b08ea028c3, type: 3}
+    - {fileID: 21300234, guid: b9d517498dbb718488e7d6b08ea028c3, type: 3}
+    - {fileID: 21300134, guid: b9d517498dbb718488e7d6b08ea028c3, type: 3}
+    - {fileID: 21300096, guid: d438c53e6ff62344ba57d818e17e0967, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - b9d517498dbb718488e7d6b08ea028c3: 21300134
+    - b9d517498dbb718488e7d6b08ea028c3: 21300126
+    - b9d517498dbb718488e7d6b08ea028c3: 21300234
+    - b9d517498dbb718488e7d6b08ea028c3: 21300206
+    - d438c53e6ff62344ba57d818e17e0967: 21300096
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300134, guid: b9d517498dbb718488e7d6b08ea028c3, type: 3}
+  - {fileID: 21300126, guid: b9d517498dbb718488e7d6b08ea028c3, type: 3}
+  - {fileID: 21300234, guid: b9d517498dbb718488e7d6b08ea028c3, type: 3}
+  - {fileID: 21300206, guid: b9d517498dbb718488e7d6b08ea028c3, type: 3}
+  - {fileID: 21300096, guid: d438c53e6ff62344ba57d818e17e0967, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Equip_67
+  - Equip_63
+  - Equip_117
+  - Equip_103
+  - UIAtlas_49
+  m_RenderDataMap: {}
+  m_Tag: SpriteAtlas_Skill
+  m_IsVariant: 0
