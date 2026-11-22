@@ -1,43 +1,67 @@
-# MyARPGTest · 动作角色扮演游戏 Demo
+# ARPG-Demo
 
-> 一个基于 **Unity 2022.3 LTS** 的动作角色扮演游戏（ARPG）练习项目。
-> 包含第三人称战斗、技能系统、动画事件、UI 流程、程序化场景搭建、数据存档等完整模块。
+基于 Unity 的动作角色扮演游戏战斗练习项目，实现了技能系统、UI 框架、有限状态机、对象池等核心模块。
 
-## 预览
+演示视频链接： [【28届实习，ARPG项目演示】](https://www.bilibili.com/video/BV1k4WB6rED8?vd_source=f5e89f8dc4896c7a1d8d179eab8ae72e)
 
-| 开始界面 | 角色选择 |
-|---|---|
-| ![开始界面](Docs/screenshots/01_start_menu.jpg) | ![角色选择](Docs/screenshots/02_hero_select.jpg) |
+## 游戏流程
 
-| 主城场景 | 战斗场景 |
-|---|---|
-| ![主城](Docs/screenshots/03_city_scene.jpg) | ![战斗](Docs/screenshots/04_battle_scene.jpg) |
+### 1. 开始界面
+提供「开始新游戏」与「继续游戏」入口。使用本地 Sqlite 表实现简单的数据存档
+<img width="725" height="421" alt="屏幕截图 2026-11-13 193655" src="https://github.com/user-attachments/assets/14275783-12d9-407c-bb56-0ce30326207f" />
 
-| 技能表现 | UI 素材 |
-|---|---|
-| ![技能](Docs/screenshots/05_skills.jpg) | ![UI](Docs/screenshots/06_ui_overview.jpg) |
+### 2. 角色选择
+选择不同角色按钮，展示角色，显示角色信息
+
+**战士** —— 近战输出职业，武器为砍刀，拥有强大的力量与体力，可正面摧毁敌人防御，推荐新手使用。
+<img width="722" height="422" alt="屏幕截图 2026-11-13 193720" src="https://github.com/user-attachments/assets/9a5026d6-e110-44e1-966b-984e1efc1e7e" />
+
+**法师** —— 远程输出职业，武器为法杖，自身体力较弱，依靠法术进行远距离范围攻击。
+<img width="724" height="421" alt="屏幕截图 2026-11-13 193724" src="https://github.com/user-attachments/assets/4ec5ec44-31ae-4cde-bd87-4a1c070c1f5c" />
+
+### 3. 主城场景
+<img width="721" height="422" alt="屏幕截图 2026-11-13 193744" src="https://github.com/user-attachments/assets/c1cdbc28-ba69-4bdd-82b5-b0a1493ab2f9" />
+
+### 4. 技能选择面板
+为角色选择技能，到战斗场景中会读取配置的数据，灵活配置
+<img width="728" height="423" alt="屏幕截图 2026-11-13 193751" src="https://github.com/user-attachments/assets/fdb0f7ff-ce79-4492-9c36-9b9e6ed41ce3" />
+
+### 5. 关卡选择
+<img width="724" height="424" alt="屏幕截图 2026-11-13 193759" src="https://github.com/user-attachments/assets/b3ea31db-eeff-46e7-942e-83b96f4b56c7" />
+
+### 6. 角色技能与敌人状态机
+<img width="723" height="425" alt="屏幕截图 2026-11-13 193852" src="https://github.com/user-attachments/assets/ac61bdfc-486b-44ae-8ebf-266d9ff9d5da" />
+<img width="727" height="419" alt="屏幕截图 2026-11-13 193815" src="https://github.com/user-attachments/assets/f3667bcd-86d8-4572-83d3-b6a85a7ff9ba" />
+
+## 核心技术
+
+- **有限状态机（FSM）**：统一管理敌人待机、移动、攻击、追击、死亡等状态切换。
+- **技能系统**：配置驱动的技能释放逻辑，支持群体伤害、持续伤害、冷却管理等效果，支持多种技能判定方式
+- **UI 框架**：实现简单 UI 框架，使用窗口管理交互元素，减少耦合。
+- **对象池**：统一管理子弹、技能特效等高频创建对象，减少运行时 GC。
+- **设计模式实践**：单例、工厂、对象池等在战斗系统中的实际落地。
 
 ## 技术栈
 
-- **引擎**：Unity 2022.3.55f1c1（内置渲染管线，PC / Android 均构建过）
-- **语言**：C#
-- **UI**：uGUI + TextMeshPro（自带 SDF 中文字体、九宫格 NineSlice）
-- **数据**：SQLite（`Assets/StreamingAssets/ARPG.db`）+ ScriptableObject 技能配置
-- **框架特性**：对象池、有限状态机（FSM）、动画事件、事件中心、Resources 配置映射
-- **相机**：自写第三人称相机（右键转视角 / 滚轮缩放）
+| 项目 | 说明 |
+|---|---|
+| 引擎 | Unity 2022.3.55f1c1（内置渲染管线，PC / Android 均构建过） |
+| 语言 | C# |
+| UI | uGUI + TextMeshPro（自带 SDF 中文字体、九宫格 NineSlice） |
+| 数据 | SQLite（`Assets/StreamingAssets/ARPG.db`）+ ScriptableObject 技能配置 |
+| 相机 | 自写第三人称相机（右键转视角、滚轮缩放） |
+| 动画 | 通用 AnimationEvent 桥 + 技能命中帧触发 |
+| 场景 | 程序化生成的主城 / 战斗场景（顶点色 + 自定义 Shader、实时灯光、雾） |
 
 ## 功能模块
 
-| 模块 | 说明 | 主要文件 |
+| 模块 | 说明 | 位置 |
 |---|---|---|
-| 技能系统 | 4 个技能（裂地斩 / 旋风斩 / 烈焰风暴 / 霜华新星），冷却、消耗、范围判定、对象池 | `MyScript/MyHelper/SkillFrameWork/` |
-| 技能数据 | 技能从数据库迁移到 ScriptableObject，Inspector 直接配数值 | `Resources/SkillConfig/Job*_SkillSet.asset` |
-| 技能特效 | 4 个表现 prefab，按时间轴依次播放起手 / 命中 / 余留，带点光闪光 | `MyPerfabs/Skill/`、`SkillEffectSequencer.cs` |
-| 动画事件 | 通用 `AnimationEvent` 桥 + `CharacterSkillSystem`，命中帧触发技能表现 | `AnimationEvent.cs`、`CharacterSkillSystem.cs` |
-| 战斗 | 连招输入、受击/死亡、敌人 AI 状态机、血量 HUD | `MyScript/MyHelper/` |
+| 技能系统 | 裂地斩 / 旋风斩 / 烈焰风暴 / 霜华新星，冷却、消耗、范围判定、对象池 | `Assets/MyScript/MyHelper/SkillFrameWork/` |
+| 技能数据 | 技能从数据库迁移到 ScriptableObject，Inspector 直接配数值 | `Assets/Resources/SkillConfig/Job*_SkillSet.asset` |
+| 技能特效 | 4 个表现 prefab，按时间轴依次播放起手 / 命中 / 余留，带点光闪光 | `Assets/MyPerfabs/Skill/` |
+| 敌人 AI | 有限状态机管理待机 / 巡逻 / 追击 / 攻击 / 死亡 | `Assets/MyScript/MyHelper/` |
 | 第三人称相机 | 相机与角色根节点平级，角色转身不影响视角；WASD 相对相机方向移动 | `ThirdPersonCameraController.cs`、`CharacterMotor.cs` |
-| UI 流程 | 开始界面 → 输入角色名 → 选择角色 → 主城 / 战斗 | `Scenes/` |
-| 场景 | 程序化生成的主城与战斗场景（顶点色 + 自定义 Shader、实时灯光、雾） | `MyRes/GeneratedEnv/` |
 
 ## 目录结构
 
@@ -52,16 +76,15 @@ Assets/
 ├─ PlayerPart/            输入系统与角色 Animator Controller
 ├─ Plugins/               第三方插件（Joystick Pack 等）
 └─ TextMesh Pro/          TMP 基础资源
-Docs/screenshots/         README 截图
 Packages/                 Unity 包依赖
 ProjectSettings/          工程设置
 ```
 
 ## 运行方式
 
-1. 使用 **Unity 2022.3.55f1c1**（或同系列 2022.3 LTS）打开本目录；
+1. 使用 **Unity 2022.3.55f1c1**（或同系列 2022.3 LTS）打开本工程；
 2. 打开 `Assets/Scenes/StartScene.unity`，点 Play 即可从开始界面体验完整流程；
-3. 若只想看战斗：打开 `Assets/Scenes/BattleScene.unity` → Play。
+3. 只想看战斗：打开 `Assets/Scenes/BattleScene.unity` → Play。
 
 > 仓库没有提交 `Library/`、`Temp/` 等自动生成目录，首次打开 Unity 会重新导入资源，属正常现象。
 
