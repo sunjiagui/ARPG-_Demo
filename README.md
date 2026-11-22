@@ -45,13 +45,12 @@
 
 | 项目 | 说明 |
 |---|---|
-| 引擎 | Unity 2022.3.55f1c1（内置渲染管线，PC / Android 均构建过） |
+| 引擎 | Unity 2022.3.55f1c1 |
 | 语言 | C# |
-| UI | uGUI + TextMeshPro（自带 SDF 中文字体、九宫格 NineSlice） |
+| UI | UGUI + TextMeshPro |
 | 数据 | SQLite（`Assets/StreamingAssets/ARPG.db`）+ ScriptableObject 技能配置 |
 | 相机 | 自写第三人称相机（右键转视角、滚轮缩放） |
 | 动画 | 通用 AnimationEvent 桥 + 技能命中帧触发 |
-| 场景 | 程序化生成的主城 / 战斗场景（顶点色 + 自定义 Shader、实时灯光、雾） |
 
 ## 功能模块
 
@@ -80,21 +79,11 @@ Packages/                 Unity 包依赖
 ProjectSettings/          工程设置
 ```
 
-## 运行方式
-
-1. 使用 **Unity 2022.3.55f1c1**（或同系列 2022.3 LTS）打开本工程；
-2. 打开 `Assets/Scenes/StartScene.unity`，点 Play 即可从开始界面体验完整流程；
-3. 只想看战斗：打开 `Assets/Scenes/BattleScene.unity` → Play。
-
-> 仓库没有提交 `Library/`、`Temp/` 等自动生成目录，首次打开 Unity 会重新导入资源，属正常现象。
 
 ## 说明
 
 - 技能数据在 `Assets/Resources/SkillConfig/`，改数值直接在 Inspector 里改，无需动代码。
 - 场景中的程序化环境素材在 `Assets/MyRes/GeneratedEnv/`（模型 / 预制体 / 材质 / Shader）。
 - 角色动画事件统一为 `SkillTrigger`，挂在 Animator 同物体的 `AnimationEvent` 组件上。
-- 工程中第三方资源（TextMeshPro、Joystick Pack、Standard Assets 特效、Noto Sans SC / 仿宋字体）版权归原作者所有。
 
-## License
 
-本项目仅用于学习与技术交流。
